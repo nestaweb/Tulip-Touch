@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+ul,
+ol {
+	margin-left: 1rem;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+	width: auto;
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+input[type='email'] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: white;
+	color: var(--color-text--dark);
+	font-size: 16px;
+	width: 100%;
+	min-height: 24px;
+	min-width: 200px;
+	position: relative;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.visually-hidden {
+	position: absolute !important;
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	word-wrap: normal !important;
+}

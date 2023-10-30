@@ -1,0 +1,84 @@
+.vertical {
+	margin-top: 40vh;
+	overflow: hidden;
+	position: relative;
+	&__heading {
+		@include fluid-type(320px, 1440px, 80px, 100px);
+		font-weight: 700;
+		padding: 0 1.5rem;
+		color: var(--color-1);
+	}
+
+	&__content {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		overflow: hidden;
+		align-items: flex-start;
+		padding: 10vh 0;
+		@include page-grid;
+	}
+
+	&__background {
+		position: absolute;
+		@include page-grid;
+		width: calc(100% - 4.8rem);
+		top: 40vh;
+		bottom: 0;
+		height: 300vh;
+	}
+
+	&__columns {
+		background-color: var(--color-6);
+		height: 100%;
+	}
+	
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 2vw;
+	
+		&__content {
+			h3 {
+				font-weight: 700;
+				@include fluid-type(320px, 1440px, 15px, 25px);
+				color: var(--color-1);
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-bottom: 1vh;
+			}
+		}
+	}
+
+	&__col__left {
+		display: flex;
+		gap: 2.5rem;
+	}
+
+	&__img {
+		background-image: url("../../images/flowers1.webp");
+		min-width: 31%;
+		height: 400px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 center;
+
+		&__2 {
+			background-position: 50% center;
+		}
+
+		&__3 {
+			background-position: 100% center;
+		}
+	}
+}
+
+.vertical__content .col_left {height: 100%;}
+
+.vertical__content .col_right {
+	padding-left: 1vw;
+}
+
+.vertical__item:not(:last-child) {
+    margin-bottom: 240px;
+}

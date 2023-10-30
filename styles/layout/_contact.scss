@@ -1,0 +1,13 @@
+.contact {
+	&__heading {
+		@include fluid-type(320px, 1440px, 80px, 100px);
+		font-weight: 700;
+		padding: 0 1.5rem;
+		color: var(--color-1);
+		z-index: 20;
+	}
+
+	&__content {
+		@include page-grid;
+	}
+}

@@ -1,0 +1,59 @@
+.hero {
+	height: 100vh;
+	background-color: var(--color-2);
+	position: absolute;
+	top: 0;
+	right: -100vw;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	animation: heroAnim 3s ease forwards;
+	animation-delay: 2s;
+
+	@keyframes heroAnim {
+		0% {
+			right: -100vw;
+		}
+		100% {
+			right: 0;
+		}
+	}
+	&__content {
+		width: 100%;
+		@include page-grid;
+
+		h1 {
+			font-weight: 700;
+			@include fluid-type(430px, 1440px, 130px, 150px);
+			letter-spacing: 2px;
+			color: var(--color-1);
+			text-align: center;
+			text-transform: uppercase;
+			div.char {
+				opacity: 0;
+			}
+		}
+
+		a.button {
+			background: var(--color-5);
+		}
+
+		&__images {
+			margin-top: 10vh;
+			margin-bottom: -100vh;
+			height: 50vh;
+			// height: 0;
+			object-fit: cover;
+			transition: all 0.5s ease-in-out;
+
+			&.fade-up--active {
+				height: 50vh;
+			}
+
+			&:nth-of-type(2) {
+				margin-top: 20vh;
+				margin-bottom: -100vh;
+			}
+		}
+	}
+}
