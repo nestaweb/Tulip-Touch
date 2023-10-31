@@ -10,4 +10,23 @@
 	&__content {
 		@include page-grid;
 	}
+
+	&__item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		gap: 2.5vh;
+		
+		h3 {
+			@include fluid-type(320px, 1440px, 16px, 24px);
+			font-weight: 700;
+			color: var(--color-1);
+		}
+
+		&__link {
+			
+		}
+	}
 }

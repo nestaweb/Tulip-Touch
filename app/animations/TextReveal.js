@@ -21,7 +21,7 @@ export default class TextReveal extends Observer{
 	}
 
 	onLeave() {
-		gsap.set(this.splitWords.words, {
+		gsap.to(this.splitWords.words, {
 			y: '100%',
 			duration: 1.2,
 			stagger: 0.02,

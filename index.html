@@ -37,22 +37,30 @@
 							</p>
 						</div>
 						<div class="header__contact">
-							<button class="header__contact__icon header__child">
-								<p class="dark">Nos Services</p>
-								<p class="light">Nos Services</p>
-							</button>
-							<button class="header__contact__icon header__child">
-								<p class="dark">Nos bouquets</p>
-								<p class="light">Nos bouquets</p>
-							</button>
-							<button class="header__contact__icon header__child">
-								<p class="dark">Nos Valeurs</p>
-								<p class="light">Nos Valeurs</p>
-							</button>
-							<button class="header__contact__icon header__child">
-								<p class="dark">Contact</p>
-								<p class="light">Contact</p>
-							</button>
+							<a href="#vertical">
+								<button class="header__contact__icon header__child">
+									<p class="dark">Nos Services</p>
+									<p class="light">Nos Services</p>
+								</button>
+							</a>
+							<a href="#horizontal">
+								<button class="header__contact__icon header__child">
+									<p class="dark">Nos bouquets</p>
+									<p class="light">Nos bouquets</p>
+								</button>
+							</a>
+							<a href="#values">
+								<button class="header__contact__icon header__child">
+									<p class="dark">Nos Valeurs</p>
+									<p class="light">Nos Valeurs</p>
+								</button>
+							</a>
+							<a href="#contact">
+								<button class="header__contact__icon header__child">
+									<p class="dark">Contact</p>
+									<p class="light">Contact</p>
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -135,7 +143,7 @@
 					</div>
 				</div>
 			</section>
-			<!-- BOUQUETS -->
+			<!-- PROJECTS -->
 			<section id="horizontal" class="section section--beige section--medium--padding horizontal">
 				<div class="container">
 					<div class="horizontal__content">
@@ -148,27 +156,27 @@
 							</p>
 						</div>
 						<div class="horizontal__item">
-							<div class="horizontal__num" data-animation="parallax-image">
+							<div class="horizontal__num" >
 								<img src="./images/flowers1.webp" alt="flowers">
 							</div>
 						</div>
 						<div class="horizontal__item">
-							<div class="horizontal__num" data-animation="parallax-image">
+							<div class="horizontal__num">
 								<img src="./images/flowers2.webp" alt="flowers">
 							</div>
 						</div>
 						<div class="horizontal__item">
-							<div class="horizontal__num" data-animation="parallax-image">
+							<div class="horizontal__num" >
 								<img src="./images/flowers3.webp" alt="flowers">
 							</div>
 						</div>
 						<div class="horizontal__item">
-							<div class="horizontal__num" data-animation="parallax-image">
+							<div class="horizontal__num" >
 								<img src="./images/flowers4.webp" alt="flowers">
 							</div>
 						</div>
 						<div class="horizontal__item">
-							<div class="horizontal__num" data-animation="parallax-image">
+							<div class="horizontal__num">
 								<img src="./images/flowers5.webp" alt="flowers">
 							</div>
 						</div>
@@ -176,7 +184,7 @@
 				</div>
 			</section>
 			<!-- VALUES -->
-			<section class="section section--beige section--small--padding values">
+			<section id="values" class="section section--beige section--small--padding values">
 				<div class="container">
 					<h1 class="values__heading" data-animation="text-reveal">Nos Valeurs</h1>
 					<div class="values__content">
@@ -238,21 +246,24 @@
 				</div>
 			</section>
 			<!-- CONTACT -->
-			<section class="section section--beige section--medium--padding contact">
+			<section id="contact" class="section section--beige section--medium--padding contact">
 				<div class="container">
 					<h1 class="contact__heading" data-animation="text-reveal">Nous Retrouver</h1>
 					<div class="contact__content">
-						<div class="contact col-2--span-3">
-							<dotlottie-player src="./images/mail.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
-							<h1>des</h1>
+						<div class="contact__item col-2--span-3">
+							<dotlottie-player src="./images/mail.lottie" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<h3>Par Mail</h3>
+							<p class="contact__item__link">tulip.touch@gmail.com</p>
 						</div>
-						<div class="contact col-6--span-3">
-							<dotlottie-player src="./images/mail.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
-							<h1>dezsw</h1>
+						<div class="contact__item col-5--span-4">
+							<dotlottie-player src="./images/insta.lottie" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<h3>Sur Instagram</h3>
+							<p class="contact__item__link">@tulip_touch</p>
 						</div>
-						<div class="contact col-10--span-3">
-							<dotlottie-player src="./images/mail.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
-							<h1>desw</h1>
+						<div class="contact__item col-9--span-3">
+							<dotlottie-player src="./images/shop.lottie" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<h3>En Boutique</h3>
+							<p class="contact__item__link">9 Boulevard Jeanne d'Arc, Rennes</p>
 						</div>
 					</div>
 				</div>
