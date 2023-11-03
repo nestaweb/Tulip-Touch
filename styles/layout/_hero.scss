@@ -24,7 +24,7 @@
 
 		h1 {
 			font-weight: 700;
-			@include fluid-type(430px, 1440px, 130px, 150px);
+			@include fluid-type(430px, 1440px, 50px, 150px);
 			letter-spacing: 2px;
 			color: var(--color-1);
 			text-align: center;

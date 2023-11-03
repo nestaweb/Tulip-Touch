@@ -17,6 +17,11 @@
 		align-items: flex-start;
 		padding: 10vh 0;
 		@include page-grid;
+
+		@media screen and (max-width: 768px) {
+			display: flex;
+			padding-top: 20vh;
+		}
 	}
 
 	&__background {
@@ -37,8 +42,14 @@
 		display: flex;
 		align-items: center;
 		gap: 2vw;
+		dotlottie-player {
+			@media screen and (max-width: 568px) {
+				display: none;
+			}
+		}
 	
 		&__content {
+
 			h3 {
 				font-weight: 700;
 				@include fluid-type(320px, 1440px, 15px, 25px);
@@ -53,6 +64,10 @@
 	&__col__left {
 		display: flex;
 		gap: 2.5rem;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	&__img {
