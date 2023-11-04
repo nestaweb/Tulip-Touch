@@ -6,18 +6,40 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from 'split-type'
 gsap.registerPlugin(ScrollTrigger);
 
+// import json files
+import flower from '../images/flower.json';
+import flower1 from '../images/flower1.json';
+import flower2 from '../images/flower2.json';
+import flower3 from '../images/flower3.json';
+import flower4 from '../images/flower4.json';
+import insta from '../images/insta.json';
+import mail from '../images/mail.json';
+import shop from '../images/shop.json';
+
+
 class App {
 	constructor() {
 		document.body.style.opacity = 1;
 		this._createLenis();
 		this._createHome();
+		this._setup();
 		this._render();
+	}
+
+	_setup() {
+		flower
+		flower1
+		flower2
+		flower3
+		flower4
+		insta
+		mail
+		shop
 	}
 
 	_createLenis() {
 
 		const targets = document.querySelectorAll('.reveal-type')
-
 
 		targets.forEach(target => {
 			const bg = target.dataset.bgColor
