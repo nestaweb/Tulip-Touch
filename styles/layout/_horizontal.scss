@@ -43,19 +43,38 @@
 		position: relative;
 		border-radius: 5px;
 		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 
 		@media screen and (max-width: 768px) {
 			width: 60vw;
 		}
 	
-		img {
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
+		// img {
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// }
+		&[data-image='1'] {
+			background-image: url(../../images/flowers1.webp);
+		}
+		&[data-image='2'] {
+			background-image: url(../../images/flowers2.webp);
+		}
+		&[data-image='3'] {
+			background-image: url(../../images/flowers3.webp);
+		}
+		&[data-image='4'] {
+			background-image: url(../../images/flowers4.webp);
+		}
+		&[data-image='5'] {
+			background-image: url(../../images/flowers5.webp);
 		}
 	}
+
 
 	&__text {
 		@include fluid-type(320px, 1440px, 12px, 30px);
@@ -77,4 +96,3 @@
 		}
 	}
 }
-
