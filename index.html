@@ -247,17 +247,17 @@
 					<h1 class="contact__heading" data-animation="text-reveal">Nous Retrouver</h1>
 					<div class="contact__content">
 						<div class="contact__item col-2--span-3">
-							<dotlottie-player src="./images/mail.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<dotlottie-player id="dotlottiemail" src="./images/mail.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
 							<h3>Par Mail</h3>
 							<p class="contact__item__link">tulip.touch@gmail.com</p>
 						</div>
 						<div class="contact__item col-5--span-4">
-							<dotlottie-player src="./images/insta.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<dotlottie-player id="dotlottieinsta" src="./images/insta.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
 							<h3>Sur Instagram</h3>
 							<p class="contact__item__link">@tulip_touch</p>
 						</div>
 						<div class="contact__item col-9--span-3">
-							<dotlottie-player src="./images/shop.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
+							<dotlottie-player id="dotlottieshop" src="./images/shop.json" background="transparent" speed="1" style="width: 300px; height: 100px" direction="1" mode="normal" loop autoplay></dotlottie-player>
 							<h3>En Boutique</h3>
 							<p class="contact__item__link">9 Boulevard Jeanne d'Arc, Rennes</p>
 						</div>
@@ -275,6 +275,11 @@
 			import insta from './images/insta.json';
 			import mail from './images/mail.json';
 			import shop from './images/shop.json';
+
+			document.getElementById("dotlottiemail").setAttribute("src", mail);
+			document.getElementById("dotlottieinsta").setAttribute("src", insta);
+			document.getElementById("dotlottieshop").setAttribute("src", shop);
+
 		</script>
 		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 		<script type="module" src="./app/index.js"></script>
